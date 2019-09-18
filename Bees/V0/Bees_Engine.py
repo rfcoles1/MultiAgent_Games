@@ -39,6 +39,7 @@ class Hive(object):
 class BeeEngine(object):
     def __init__(self):
         self.xmax = 10
+        self.ymax = 10
         self.increment = 1
         
         self.num_bees = 1
