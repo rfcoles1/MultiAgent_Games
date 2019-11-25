@@ -7,7 +7,7 @@ from Tkinter import *
 import os
 import sys
 sys.path.insert(0,'../../../')
-import CoOp_Games
+import MultiAgent_Games
 
 sys.path.insert(0,'../../../Genetic_Algorithms')
 from GA_Config import Config
@@ -20,7 +20,7 @@ config.env_name = 'Bees-v0'
 config.a_size = 5
 
 network = Network(config)
-weights = np.load('./models/Bees-v0/49000.npz')
+weights = np.load('./models/Bees-v0/1750.npz')
 network.w_in = weights['w_in']
 network.w_hidden = weights['w_h']
 network.w_out = weights['w_out']
